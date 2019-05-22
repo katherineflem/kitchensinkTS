@@ -1,14 +1,13 @@
-var name = "Katherine";
 // defined varible as my name, Katherine
-var states = 50;
+// const states: number= 50;
 // defined constant of how many states as an integer, 50
 // const sum = 5 + 4;
 // named a variable for the sum of 5 + 4, which should output 9
-sayHello = function () {
-    alert("Hello World");
+var sayHello = function (name) {
+    $('#hello').html("Hello " + name);
 };
-sayHello();
-checkAge = function (name, age) {
+sayHello("Katherine");
+var checkAge = function (name, age) {
     if (age < 21) {
         return alert("Sorry\" " + name + " \",you aren't old enough to view this page");
     }
@@ -17,11 +16,11 @@ checkAge('Charles', 21);
 checkAge('Abby', 27);
 checkAge('James', 18);
 checkAge('John', 17);
-var vegetables = ["corn", "onions", "broccoli", "greenbeans"];
+var vegetables2 = ["corn", "onions", "broccoli", "greenbeans"];
 for (var a = 0; a < vegetables.length; a++) {
     console.log(vegetables[a]);
 }
-var friends = [
+var friends2 = [
     {
         name: "George",
         age: 27
@@ -52,11 +51,11 @@ checkAge("Audrey", 25);
 checkAge("Tricia", 35);
 checkAge("Wallace", 18);
 checkAge("William", 16);
-getLength = function (word1) {
+var getLength = function (word1) {
     return word1.length;
 };
 getLength("Hello World");
-var sum = getLength("Hello World");
+var sum2 = getLength("Hello World");
 if (sum % 2 == 0) {
     console.log("The world is nice and even!");
 }

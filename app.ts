@@ -1,16 +1,14 @@
-let name: string 
 // defined varible as my name, Katherine
 // const states: number= 50;
 // defined constant of how many states as an integer, 50
 // const sum = 5 + 4;
 // named a variable for the sum of 5 + 4, which should output 9
+let sayHello = (name:string) =>{
+    $('#hello').html(`Hello ${name}`);
+};
+sayHello("Katherine")
 
-sayHello=()=>{
-    alert("Hello World")
-}
-sayHello()
-
-checkAge=(name, age)=> {
+let checkAge=(name: string, age: number)=> {
     if (age < 21) {
         return alert(`Sorry" ${name} ",you aren't old enough to view this page`)
     }
@@ -20,13 +18,13 @@ checkAge('Abby', 27);
 checkAge('James', 18);
 checkAge('John', 17)
 
-let vegetables = ["corn", "onions", "broccoli", "greenbeans"]
+let vegetables2 = ["corn", "onions", "broccoli", "greenbeans"]
 for (let a = 0; a < vegetables.length; a++) {
     console.log(vegetables[a]);
 }
 
 
-let friends = [
+let friends2 = [
     {
         name: "George",
         age: 27
@@ -59,12 +57,12 @@ checkAge("Wallace", 18)
 checkAge("William", 16)
 
 
-getLength=(word1) =>{
+let getLength=(word1) =>{
     return word1.length
 }
 getLength ("Hello World")
 
-const sum = getLength("Hello World")
+const sum2 = getLength("Hello World")
 if (sum % 2 == 0){
     console.log ("The world is nice and even!")
 }else {
